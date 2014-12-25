@@ -14,7 +14,21 @@ Optionally, check the JavaScript console for output.
 
 ## Install
 
-1. Ensure that `make` is available on your system.
+### Pre-requisites
+
+1. Java 8 SE ("Standard Edition"). Available from [Oracle](http://www.oracle.com/technetwork/java/javase/downloads/index.html).  It is suggested to install Java 8 in the standard place for your system, such as on Mac, in `/Library/Java/JavaVirtualMachines`.
+1. Check that your `$JAVA_HOME` environment variable points to your new Java 8 installation, and if not, set it so that it does.  On Mac, if you put Java 8 in the location suggested, it will do so automatically on system restart (meantime, you can set JAVA_HOME manually, if desired).  For example:
+```
+$ echo $JAVA_HOME
+/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
+```
+1. `lein`, from [Leiningen.org](http://leiningen.org/#install).  Follow the instructions at that link if you don't have `lein`.
+1. `lein` is on your system path.  For example:
+```
+$ lein --version
+Leiningen 2.5.0 on Java 1.8.0_25 Java HotSpot(TM) 64-Bit Server VM
+```
+1. Ensure that `make` is available on your system and is in your system path.
 1. Optional (for `make run`): Ensure that `open`, as it works on Mac OS X for example, is available on your system.
 1. `make install`
 
