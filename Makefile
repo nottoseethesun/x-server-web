@@ -8,11 +8,12 @@ build-auto:
 	lein cljsbuild auto
 
 run:
-	open resources/public/index.html
+	bin/run.bash
 
 clean:
-	lein clean
 	rm -rf build
-	mkdir build
 
-PHONY: install build build-auto run clean
+uninstall:
+	lein clean
+
+PHONY: install build build-auto run clean uninstall
