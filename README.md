@@ -40,7 +40,7 @@ Leiningen 2.5.0 on Java 1.8.0_25 Java HotSpot(TM) 64-Bit Server VM
 
 ## Run
 
-Either `make run`, or open the following url in your browser: `file:///Users/cbalz/code/x-server-web/resources/public/index.html`.
+Either `make run`, or open the following url in your browser: `resources/public/index.html`.
 
 
 ## Why
