@@ -28,7 +28,10 @@ $ echo $JAVA_HOME
 $ lein --version
 Leiningen 2.5.0 on Java 1.8.0_25 Java HotSpot(TM) 64-Bit Server VM
 ```
-1. Ensure that [`make`](http://www.gnu.org/software/make/) is available on your system and is in your system path.
+1. [`make`](http://www.gnu.org/software/make/)
+1. `make` is in your system path.
+1. `npm` and `node`, available from [http://nodejs.org](http://nodejs.org), or your favorite package manager.
+1. `npm` and `node` are on your system path.
 1. Optional (for `make run`): Ensure that `open` (as it works on Mac OS X for example) or `xdg-open` is available on your system.
 1. `make install`
 
@@ -40,7 +43,7 @@ Leiningen 2.5.0 on Java 1.8.0_25 Java HotSpot(TM) 64-Bit Server VM
 
 ## Run
 
-Either `make run`, or open the following url in your browser: `resources/public/index.html`.
+`make run`
 
 
 ## Why

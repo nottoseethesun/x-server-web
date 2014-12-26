@@ -1,4 +1,7 @@
+PORT=6200
+
 install:
+	npm i
 	lein deps
 
 build:
@@ -8,10 +11,10 @@ build-auto:
 	lein cljsbuild auto
 
 run:
-	bin/run.bash
+	bin/run.bash $(PORT)
 
-clean:
-	rm -rf build
+clean:	
+	rm -rf build node_modules
 
 uninstall:
 	lein clean

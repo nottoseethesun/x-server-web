@@ -1,0 +1,24 @@
+{
+  "name": "x-server-web",
+  "version": "0.0.1",
+  "description": "Project to create an X Server, written in ClojureScript, that runs on a web browser.",
+  "author": "Chris M. Balz <christopherbalz@yahoo.com>",
+  "contributors": [],
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/christopherbalz/x-server-web"
+},
+  "bugs": {
+  "url": "https://github.com/christopherbalz/x-server-web/issues"
+},
+  "keywords": [
+  "X Window System",
+  "web browser"
+],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "http-server": "*"
+  },
+  "license": "MIT"
+}
