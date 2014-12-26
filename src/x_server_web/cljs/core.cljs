@@ -12,7 +12,7 @@
    :listen-port listen-port
    :options options
    :displays {
-              :display1 {:screens '({:id 0})} ;; Child windows and iframes could serve to create a multiple screen arrangement.
+              :display1 {:screens '({:id 0})} ; Child windows and iframes could serve to create a multiple screen arrangement.
               }
    :clients    {}
    :extensions {}

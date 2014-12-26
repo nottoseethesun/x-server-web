@@ -9,7 +9,7 @@
 ## Getting Started
 
 Follow the Install, Build, and Run steps below, in that order.
-Optionally, check the JavaScript console for output.
+Optionally, check the JavaScript console on the web browser for output, after `make run`.
 
 
 ## Install
@@ -22,18 +22,19 @@ Optionally, check the JavaScript console for output.
 $ echo $JAVA_HOME
 /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
 ```
-1. `lein`, from [Leiningen.org](http://leiningen.org/#install).  Follow the instructions at that link if you don't have `lein`.
-1. `lein` is on your system path.  For example:
+3. `lein`, from [Leiningen.org](http://leiningen.org/#install).  Follow the instructions at that link if you don't have `lein`.
+4. `lein` is on your system path.  For example:
 ```
 $ lein --version
 Leiningen 2.5.0 on Java 1.8.0_25 Java HotSpot(TM) 64-Bit Server VM
 ```
-1. [`make`](http://www.gnu.org/software/make/)
-1. `make` is in your system path.
-1. `npm` and `node`, available from [http://nodejs.org](http://nodejs.org), or your favorite package manager.
-1. `npm` and `node` are on your system path.
-1. Optional (for `make run`): Ensure that `open` (as it works on Mac OS X for example) or `xdg-open` is available on your system.
-1. `make install`
+5. [`make`](http://www.gnu.org/software/make/)
+6. `make` is in your system path.
+7. `npm` and `node`, available from [http://nodejs.org](http://nodejs.org), or your favorite package manager.
+8. `npm` and `node` are on your system path.
+9. Optional (for `make run`): Ensure that `open` (as it works on Mac OS X for example) or `xdg-open` is available on your system.
+10. Port 6200 is available: No other programs should be using logical network port 6200.
+11. `make install`
 
 
 ## Build
@@ -42,8 +43,13 @@ Leiningen 2.5.0 on Java 1.8.0_25 Java HotSpot(TM) 64-Bit Server VM
 
 
 ## Run
-
-`make run`
+```
+make serve
+```
+and then in a different tab:
+```
+make run
+```
 
 
 ## Why
@@ -85,6 +91,7 @@ Clojurescript has been chosen for this project because:
 
 # Roadmap
 
+1. Turn on source-maps
 1. Develop basic X Server outline (support displays, screens, input, and so forth).
 1. Implement the networking infrastructure (websockets) that will transport the X protocol messages.
 1. Connect to a real X Client (may require developing new features).
@@ -107,3 +114,7 @@ This project has files to facilitate editing from Cursive, the IntelliJ set-up f
 Code style: Everything standard, and especially, whitespace instead of tabs.
 
 Send your clojurescript pull request, and if interested, request to be a committer.
+
+# License
+
+See the `LICENSE.txt` file in the top-level of the project directory.
