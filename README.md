@@ -106,6 +106,7 @@ Clojurescript has been chosen for this project because:
 1. Check if support for "grab" is needed.
 
 ## Roadmap: Protocol
+1. Build client-side adaptor that turns the message into EDN and sends it over websocket to the server.
 1. Set up utility to take the last significant 16 bits of each request number, for the protocol request number slot.
 
 ## Roadmap: Color
