@@ -92,12 +92,34 @@ Clojurescript has been chosen for this project because:
 # Roadmap
 
 1. Turn on source-maps
-1. Develop basic X Server outline (support displays, screens, input, and so forth).
+1. Develop basic X Server outline (support displays, screens, input, color translation to web format, and so forth).
 1. Implement the networking infrastructure (websockets) that will transport the X protocol messages.
 1. Connect to a real X Client (may require developing new features).
 1. Implement extensions as listed above.
 1. Implement a display manager.
 
+## Roadmap: Events
+1. Support the `Expose` event by checking window (`window` in the X sense: includes windows that are buttons, and so forth) expose condition on each refresh
+1. Support `KeyPress` and `KeyRelease`.
+1. Support error events.
+1. Support authentication.
+1. Check if support for "grab" is needed.
+
+## Roadmap: Protocol
+1. Set up utility to take the last significant 16 bits of each request number, for the protocol request number slot.
+
+## Roadmap: Color
+1. Color depth can be ignored, since that is already pre-set on the browser.
+1. Support `colormap`: Build a lookup facility for this table, and a place to put them.
+1. Not sure yet what to do to support visual type.
+
+## Roadmap: State
+1. Support `Window`, `Font`, `Colormap`, `Pixmap`, and `GraphicContext`.
+1. Don't support server-side fonts, since they are deprecated.
+1. Support atoms.
+
+## Roadmap: Extensions
+1. Find out what will be needed to support X Server extensions.
 
 # References
 
